@@ -15,7 +15,12 @@ def alta ():
     for i in range (0,10):
         if listaLocal[i].local== "":
             local= (input("Ingrese Local:"))
-            nro= int(input("Ingrese Nro Sucursal:"))
+            while True:
+                try:
+                    nro= int(input("Ingrese Nro Sucursal:"))
+                    break
+                except ValueError:
+                    print("El dato ingresado no es un numero")
             listaLocal[i]=IdLocal(local,nro)
             return
 
