@@ -8,14 +8,15 @@ class IdLocal:
 
 listaLocal = [IdLocal("",0)] * 10
 
-def alta (i):
-    local= int (input("Ingrese Local:"))
-    nro= (input("Ingrese Nro Sucursal:"))
-    listaLocal[i]=IdLocal(nro,local)
-    return
+def alta ():
+    for i in range (0,2):
+        if listaLocal[i].local== "":
+            local= int (input("Ingrese Local:"))
+            nro= (input("Ingrese Nro Sucursal:"))
+            listaLocal[i]=IdLocal(nro,local)
+            return
 
-
-f= alta(0)
+f= alta()
 
 def baja ():
     
