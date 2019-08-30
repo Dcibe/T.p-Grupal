@@ -3,14 +3,20 @@ class IdLocal:
         self.nro=nro
         self.local=local
     def __repr__(self):
-        return "[Local: %s, Sucursal Nº: %i]" % (self.local, self.nro)
+        return "[%s,%i]" % (self.local, self.nro)
     
-l1=IdLocal("Santa Teresita",1)
-print (l1)
 
-def alta ():
-    
+listaLocal = [IdLocal("",0)] * 10
+
+def alta (i):
+    local= int (input("Ingrese Local:"))
+    nro= (input("Ingrese Nro Sucursal:"))
+    listaLocal[i]=IdLocal(nro,local)
     return
+
+
+f= alta(0)
+
 def baja ():
     
     return
