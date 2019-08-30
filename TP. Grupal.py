@@ -8,7 +8,7 @@ class IdLocal:
 
 listaLocal = [IdLocal("",0)] * 10
 
-for f in range(0,7):
+for f in range(0,6):
     listaLocal[f]= IdLocal("Sucursal", f * 2)
 
 def alta ():
