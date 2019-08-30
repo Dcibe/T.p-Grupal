@@ -9,7 +9,7 @@ class IdLocal:
 listaLocal = [IdLocal("",0)] * 10
 
 def alta ():
-    for i in range (0,2):
+    for i in range (0,10):
         if listaLocal[i].local== "":
             local= int (input("Ingrese Local:"))
             nro= (input("Ingrese Nro Sucursal:"))
