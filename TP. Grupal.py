@@ -14,9 +14,9 @@ for f in range(0,7):
 def alta ():
     for i in range (0,10):
         if listaLocal[i].local== "":
-            local= int (input("Ingrese Local:"))
-            nro= (input("Ingrese Nro Sucursal:"))
-            listaLocal[i]=IdLocal(nro,local)
+            local= (input("Ingrese Local:"))
+            nro= int(input("Ingrese Nro Sucursal:"))
+            listaLocal[i]=IdLocal(local,nro)
             return
 
 f= alta()
